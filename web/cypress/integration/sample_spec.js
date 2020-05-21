@@ -32,7 +32,9 @@ describe('My First Test', () => {
      cy.get('input#name').type('rafael')
      cy.get('input#mail').type('rafaelsuzano@hotmail.com')
      cy.get('button[type="submit"]').click()
-     cy.reload()
+     cy.reload(true)
+
+ 
     })
     
   })
