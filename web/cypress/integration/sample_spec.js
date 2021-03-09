@@ -16,25 +16,3 @@ describe('My First Test', () => {
     })
     
   })
-
-  describe('Teste Página Local', () => {
-    it.skip('Página local', () => {
-     cy.visit('http://localhost:8070/teste.html')  
-    
-    })
-    
-  })
-
-
-  describe('Teste Página Local', () => {
-    it('Página local', () => {
-     cy.visit('http://localhost:8070/teste.html')  
-     cy.get('input#name').type('rafael')
-     cy.get('input#mail').type('rafaelsuzano@hotmail.com')
-     cy.get('button[type="submit"]').click()
-     cy.reload(true)
-
- 
-    })
-    
-  })
